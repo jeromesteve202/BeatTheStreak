@@ -7,7 +7,7 @@ Created on Fri Dec 28 22:26:22 2018
 """
 
 import pandas as pd
-#import numpy as np
+import numpy as np
 from pybaseball import batting_stats_range
 from pybaseball import playerid_lookup
 
