@@ -22,15 +22,14 @@ class AllPlayers:
     def getPlayerIDs(players):
         listOfIDs = []
         for i in range (0, len(players)):
-            
             splitPlayer = players[i].split(' ')
             first = splitPlayer[0]
             last = splitPlayer[1]                
             ident = playerid_lookup(last,first)
             identList = ident['key_bbref'].tolist()
-
             counter = len(identList) - 1
-            if len(identList) > 0:
+            
+            if len(identList) > 0:    
                 while str(identList[counter]) == 'nan' and counter > -1:
                     counter -= 1
                 finalPlayerID = identList[counter]
