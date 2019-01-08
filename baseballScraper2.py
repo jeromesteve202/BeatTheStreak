@@ -64,7 +64,7 @@ for i in range(0, len(idList)):
     rowsArr = sBuilder.split('\n')
     for row in rowsArr:
         sub = row.split('|')
-        if (len(sub) > 1):
+        if (len(sub) > 30):
             seasonGameNumber.append(sub[1])
             dateOfGame.append(sub[2])
             teamOfBatter.append(sub[3])
@@ -99,7 +99,7 @@ for i in range(0, len(idList)):
     
     battingLogDict[idList[i]] = batterGameLogData
     
-    print("added player " + str(i) + " to dict")
+    print("added player " + str(i) + " " + idList[i] + " to dict")
     
 
 
