@@ -19,7 +19,7 @@ year = "2018"
 
 battingLogDict = {}
 
-for i in range(0, len(idList)):
+for i in range(330, len(idList)):
     url = requests.get("https://www.baseball-reference.com/players/gl.fcgi?id=" + idList[i] + "&t=b&year=" + year).text
     soup = BeautifulSoup(url, 'lxml')
     table = soup.find('table',id='batting_gamelogs')
